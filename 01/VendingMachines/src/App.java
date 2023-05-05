@@ -23,12 +23,14 @@ public class App {
         itemMachine.addProduct(new HotDrink("Кофе", 100, 60, 80));
         itemMachine.addProduct(new HotDrink("Чай", 30, 150, 80));
 
-        for (Product prod: itemMachine.getProdAll()) {
-            System.out.println(prod);
-        }
-        
+        itemMachine.printProdAll();
 
+        itemMachine.setNewPrice("Чипсы", 65);
+        itemMachine.setNewPrice("Масло", 55);
+        itemMachine.setNewPrice("Кофе", 125);
+        itemMachine.setNewPrice("Сок", 55);
 
-    
+        itemMachine.printProdAll();
+            
     }
 }

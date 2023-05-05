@@ -1,6 +1,6 @@
 package VendingMachines;
 
-import Products.Product;
+import Products.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,5 +38,24 @@ public class VendingMachine {
     public List<Product> getProdAll()
     {
         return products;
+    }
+
+    public void setNewPrice(String name, double newprice)
+    {
+        for(Product prod: products)
+        {
+            if(prod.getName().contains(name))
+            {
+                prod.setPrice(newprice);
+            }
+        }
+    }
+
+    public void printProdAll() {
+        System.out.println();
+        for (Product prod: products) {
+            System.out.println(prod);
+        }
+        System.out.println();
     }
 }
