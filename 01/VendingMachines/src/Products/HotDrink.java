@@ -1,11 +1,21 @@
 package Products;
 
-public class HotDrink extends BottleOfWater {
+public class HotDrink extends Product {
+    private int volume;
     private int temp;
 
     public HotDrink(String name, double price, int volume, int temp) {
-        super(name, price, volume);
+        super(name, price);
+        this.volume = volume;
         this.temp = temp;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
     }
 
     public int getTemp() {
@@ -19,7 +29,7 @@ public class HotDrink extends BottleOfWater {
     @Override
     public String toString() {
         return "(Продукт: " + super.getName() + ", Объём: " 
-                            + super.getVolume() + "мл,  Температура: " + temp 
+                            + volume + "мл,  Температура: " + temp 
                             + " град., Цена: " + super.getPrice() + ")";
     }
 
