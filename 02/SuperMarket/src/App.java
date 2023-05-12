@@ -1,8 +1,9 @@
 
 import classes.Market;
 import classes.OrdinaryClient;
+import classes.PromoClient;
 import classes.SpecialClient;
-import classes.Promotion;
+import classes.SuperPromotion;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -15,7 +16,6 @@ public class App {
         market.acceptToMarket(client3);
         market.update();
 
-        Promotion skidka25 = new Promotion("-25%", 3);
       
 
     
