@@ -26,6 +26,11 @@ public class App {
         PromoClient client6 = new PromoClient("Svetlana", promo3as2);
         PromoClient client7 = new PromoClient("Natalia", promo3as2);
         PromoClient client8 = new PromoClient("Dima", promo3as2);
+        market.acceptToMarket(client4);
+        market.acceptToMarket(client5);
+        market.acceptToMarket(client6);
+        market.acceptToMarket(client7);
+        market.acceptToMarket(client8);
                 
         System.out.println(promo25);
         System.out.println(promo3as2);
