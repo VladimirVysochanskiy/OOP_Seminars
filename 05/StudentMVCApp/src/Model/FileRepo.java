@@ -73,6 +73,12 @@ public class FileRepo implements iGetModel {
         return students;
     }
 
+    @Override
+    public void deleteStudent() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'deleteStudent'");
+    }
+
 
 
     

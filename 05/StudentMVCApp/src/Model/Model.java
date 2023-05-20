@@ -10,9 +10,19 @@ public class Model implements iGetModel {
     public Model(List<Student> students) {
         this.students = students;
     }
-
+    
+    @Override
     public List<Student> getAllStudent()
     {
         return students;
     }
+
+    @Override
+    public void deleteStudent() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'deleteStudent'");
+    }
+
+
+
 }

@@ -1,5 +1,6 @@
 package src.Model;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -14,7 +15,14 @@ public class ModelHM implements iGetModel {
 
     @Override
     public List<Student> getAllStudent() {
-        return (List<Student>) students;
+        List<Student> values = new ArrayList<Student>(students.values());
+        return values;
+    }
+
+    @Override
+    public void deleteStudent() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'deleteStudent'");
     }
     
 }

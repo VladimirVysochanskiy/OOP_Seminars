@@ -5,4 +5,5 @@ import src.Model.Student;
 
 public interface iGetModel {
     public List<Student> getAllStudent();
+    public void deleteStudent();
 }

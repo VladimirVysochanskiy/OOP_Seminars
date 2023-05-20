@@ -70,9 +70,11 @@ public class Controller {
                     System.out.println("Выход из программы!");
                     break;
                 case LIST:
-                    getAllStudent();
+                    //getAllStudent();
                     updateView();
                     break;
+                case DELETE:
+                    
             }
 
         }
