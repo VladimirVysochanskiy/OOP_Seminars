@@ -20,9 +20,11 @@ public class ModelHM implements iGetModel {
     }
 
     @Override
-    public void deleteStudent() {
+    public void deleteStudent(long studentID) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'deleteStudent'");
     }
+
+    
     
 }

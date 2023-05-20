@@ -9,6 +9,7 @@ import src.Model.Student;
 import src.Model.Model;
 import src.View.View;
 import src.View.ViewENG;
+import src.Model.ModelHM;
 
 public class Controller {
 
@@ -74,6 +75,10 @@ public class Controller {
                     updateView();
                     break;
                 case DELETE:
+                    Long id = Long.parseLong(view.prompt("Введите номер студента для удаления: "));
+                    model.deleteStudent(id);
+                    updateView();
+
                     
             }
 

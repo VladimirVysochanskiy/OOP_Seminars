@@ -18,9 +18,14 @@ public class Model implements iGetModel {
     }
 
     @Override
-    public void deleteStudent() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'deleteStudent'");
+    public void deleteStudent(long studentID) {
+        int index = -1;
+        for (Student stud: students) {
+            if (studentID == stud.getStudentID()) {
+                index = students.indexOf(stud);
+            }
+            if (index != -1) {students.remove(index);}
+        }
     }
 
 
