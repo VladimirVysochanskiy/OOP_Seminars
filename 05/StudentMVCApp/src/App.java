@@ -27,7 +27,8 @@ public class App {
         // students.add(s4);
         // students.add(s5);
         // students.add(s6);
-               
+
+                       
         FileRepo fileRepo = new FileRepo("StudentDb.txt");
     //    for(Student pers :students)
     //    {
@@ -37,17 +38,17 @@ public class App {
 
 
     //    iGetModel model = new Model(students);
-       iGetModel modelFileRepo = fileRepo;
+        iGetModel modelFileRepo = fileRepo;
 
        
 
 
 
 
-       iGetView view = new View();
-       Controller control = new Controller(view, modelFileRepo);
-       control.run();
-       control.updateView();
+        iGetView view = new View();
+        Controller control = new Controller(view, modelFileRepo);
+        control.run();
+        control.updateView();
        
     }
 }

@@ -54,7 +54,7 @@ public class FileRepo implements iGetModel {
 
     public void saveAllStudentToFile()
     {
-        try(FileWriter fw = new FileWriter(fileName, true))
+        try(FileWriter fw = new FileWriter(fileName, false))
         {
             for(Student pers : students)
             {
@@ -81,8 +81,12 @@ public class FileRepo implements iGetModel {
             if (studentID == stud.getStudentID()) {
                 index = students.indexOf(stud);
             }
-            if (index != -1) {students.remove(index);}
         }
+        if (index == -1)
+        {
+            System.out.println("-----Студент с указанным ID не найден в списке-----");
+        } 
+        else {students.remove(index);}
     }
 
 

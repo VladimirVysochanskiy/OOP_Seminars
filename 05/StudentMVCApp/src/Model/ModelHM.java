@@ -25,6 +25,12 @@ public class ModelHM implements iGetModel {
         throw new UnsupportedOperationException("Unimplemented method 'deleteStudent'");
     }
 
+    @Override
+    public void saveAllStudentToFile() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'saveAllStudentToFile'");
+    }
+
     
     
 }

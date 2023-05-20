@@ -77,7 +77,7 @@ public class Controller {
                 case DELETE:
                     Long id = Long.parseLong(view.prompt("Введите номер студента для удаления: "));
                     model.deleteStudent(id);
-                    updateView();
+                    model.saveAllStudentToFile();
 
                     
             }

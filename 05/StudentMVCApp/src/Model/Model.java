@@ -28,6 +28,12 @@ public class Model implements iGetModel {
         }
     }
 
+    @Override
+    public void saveAllStudentToFile() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'saveAllStudentToFile'");
+    }
+
 
 
 }
