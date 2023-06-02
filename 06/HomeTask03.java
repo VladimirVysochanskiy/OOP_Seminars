@@ -8,15 +8,15 @@ public class HomeTask03 {
 
 }
 
-public interface FlatShape {
+public interface iFlatShape {
     double area();
 }
 
-public interface VolumetricShape {
+public interface iVolumetricShape {
     double volume();
 }
 
-public class Circle implements FlatShape {
+public class Circle implements iFlatShape {
     private double radius;
 
     public Circle(double radius) {
@@ -29,7 +29,7 @@ public class Circle implements FlatShape {
     }
 }
 
-public class Cube implements FlatShape, VolumetricShape {
+public class Cube implements iFlatShape, iVolumetricShape {
     private int edge;
 
     public Cube(int edge) {
